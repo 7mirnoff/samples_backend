@@ -10,11 +10,11 @@ async function bootstrap() {
 
   const config = new DocumentBuilder()
 
-    .setTitle('Keyboard builder')
+    .setTitle('samples')
     .setDescription('Documentation api')
     .setVersion('0.0.1')
 
-    .addTag('Keyboard')
+    .addTag('Samples')
     .build()
 
   const document = SwaggerModule.createDocument(app, config)
