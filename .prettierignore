@@ -1,0 +1,4 @@
+build/
+.editorconfig
+.gitlab-ci.yml
+**/api.d.ts
