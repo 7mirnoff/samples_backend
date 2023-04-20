@@ -1,10 +1,11 @@
 import { Module } from '@nestjs/common'
 import { AppController } from './app.controller'
 import { AppService } from './app.service'
-import { RoomGateway } from './websockets/room/room.gateway'
+import { PhysicRoomGateway } from './websockets/phisic-room/physic-room.gateway'
 import { ConfigModule } from '@nestjs/config'
 import * as path from 'path'
 import { ServeStaticModule } from '@nestjs/serve-static'
+import { CubesRoomGateway } from './websockets/cubes-room/cubes-room.gateway'
 
 @Module({
   imports: [
@@ -17,6 +18,6 @@ import { ServeStaticModule } from '@nestjs/serve-static'
     }),
   ],
   controllers: [AppController],
-  providers: [AppService, RoomGateway],
+  providers: [AppService, CubesRoomGateway, PhysicRoomGateway],
 })
 export class AppModule {}
