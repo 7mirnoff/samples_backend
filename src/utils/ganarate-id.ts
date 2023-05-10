@@ -1,5 +1,3 @@
-import { nanoid } from 'nanoid'
-
 export const generateId = function (): string {
-  return nanoid()
+  return Math.random().toString(36).substring(2, 15)
 }
